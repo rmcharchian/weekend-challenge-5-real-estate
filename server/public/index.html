@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate</title>
+    <script src="/vendors/angular.min.js"></script>
+    <script src="/vendors/angular-route.min.js"></script>
+    <script src="/scripts/client.js"></script>
+    <script src="scripts/controllers/rental.controller.js"></script>
+    <script src="scripts/controllers/listing.controller.js"></script>    
+    <script src="scripts/services/rental.service.js"></script>  
+    <script src="scripts/services/listing.service.js"></script>  
+    
+       
+</head>
+<!-- <body ng-app="EstateApp" ng-controller="RentalController as vm"> -->
+<body ng-app="EstateApp" ng-controller="ListingController as vm">
+        
+    <h1>Prime Real Estate<h1>
+        <!-- {{vm}} -->
+        <ul>
+                <li><a href="#!home">Home</a></li>
+                <li><a href="#!listing">Listings</a></li>
+                <li><a href="#!rental">Rentals</a></li>
+            </ul>
+            <ng-view></ng-view>
+
+</body>
+</html>
